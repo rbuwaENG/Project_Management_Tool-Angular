@@ -1,1 +1,28 @@
-<p>project-list works!</p>
+<div >
+    <h3>Projects List</h3>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Project ID</th>
+                    <th>Project Name</th>
+                    <th>Revenue</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let project of projects">
+                    <td>{{ project.id }}</td>
+                    <td>{{ project.name }}</td>
+                    <td>{{ project.revenue }}</td>
+                    <td>{{ project.status }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+  
