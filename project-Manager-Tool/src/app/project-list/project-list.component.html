@@ -1,1 +1,12 @@
-<p>project-list works!</p>
+
+
+<div>
+    <h1>Project List</h1>
+    <p>Version: {{ version }}</p>
+    <ul>
+      <li *ngFor="let project of projects">
+        ID: {{ project.id }}, Name: {{ project.name }}
+      </li>
+    </ul>
+  </div>
+  
